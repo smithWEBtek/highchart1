@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sources
   root 'sources#index'
-  get 'bar_example', to: "static#bar_example"
-  get 'fruits', to: "static#fruits"
+  get 'fruits', to: 'static#fruits'
+  get 'stocks', to: 'static#stocks'
+  get 'temp', to: 'static#temp'
 end

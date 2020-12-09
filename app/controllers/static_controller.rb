@@ -1,8 +1,14 @@
 class StaticController < ApplicationController
-  def bar_example
-  end
 
   def fruits
     render :fruits
+  end
+
+  def stocks
+    render :stocks
+  end
+
+  def temp
+    render :temp
   end
 end

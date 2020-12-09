@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Highchart1</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_pack_tag 'application' %>
-    <%= javascript_pack_tag 'fruits' %>
- 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<head>
+  <title>Highchart1</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_pack_tag 'application' %>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script src="https://code.highcharts.com/modules/export-data.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  
   </head>
-
+  
   <body>
-    <%= yield %>
-  </body>
+
+  <%= link_to 'Fruits', fruits_path %> |
+  <%= link_to 'Stocks', stocks_path %> |
+  <%= link_to 'Temp', temp_path %>
+  <hr />
+  <%= yield %>
+</body>
+
 </html>

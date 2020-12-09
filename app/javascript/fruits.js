@@ -1,12 +1,19 @@
-import moment from 'moment'
+// import moment from 'moment'
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
+  showChart()
+});
+
+const addListeners = (event) => {
+  let fruitsChartButton = $('button.fruits')
+}
+
+const showFruitsChart = (event) => {
   let d1 = new Date("2020-12-03")
   let d2 = new Date("2020-12-07")
   let d3 = new Date("2020-12-11")
 
-  const chart = Highcharts.chart('container', {
-
+  Highcharts.chart('fruits-container', {
     chart: {
       type: 'column'
     },
@@ -14,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
       text: 'Fruit Consumption'
     },
     xAxis: {
-      // categories: ['Apples', 'Bananas', 'Oranges']
-      dates: [d1, d2, d3]
+      categories: ['Apples', 'Bananas', 'Oranges']
+      // dates: [d1.getDate(), d2.getDate(), d3.getDate()]
     },
     yAxis: {
       title: {
@@ -30,4 +37,4 @@ document.addEventListener('DOMContentLoaded', function () {
       data: [5, 7, 3]
     }]
   });
-});
+} 
