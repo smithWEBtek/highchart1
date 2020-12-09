@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: deploy
+  password: pointer
+  pool: 5
+development:
+  <<: *default
+  database: highchart1_development
+test:
+  <<: *default
+  database: highchart1_test
+production:
+  <<: *default
+  database: highchart1_production
