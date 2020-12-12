@@ -6,10 +6,10 @@ default: &default
   pool: 5
 development:
   <<: *default
-  database: highchart1_development
+  database: newsapis_development
 test:
   <<: *default
-  database: highchart1_test
+  database: newsapis_test
 production:
   <<: *default
-  database: highchart1_production
+  database: newsapis_production
