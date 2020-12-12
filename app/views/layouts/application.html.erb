@@ -9,22 +9,31 @@
   <%= stylesheet_link_tag 'application', media: 'all' %>
   <%= javascript_pack_tag 'application' %>
   <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-3d.js"></script>
   <script src="https://code.highcharts.com/modules/exporting.js"></script>
   <script src="https://code.highcharts.com/modules/export-data.js"></script>
   <script src="https://code.highcharts.com/modules/accessibility.js"></script>
-  
-  </head>
-  
-  <body>
 
-  <%= link_to 'Fruits', fruits_path %> |
-  <%= link_to 'Stocks', stocks_path %> |
-  <%= link_to 'Temp', temp_path %>
-  <hr />
+</head>
 
-<div id="fruits-container" style="width:100%; height:400px;"></div>
-<div id="stocks-container" style="width:100%; height:400px;"></div>
-<div id="temp-container" style="width:100%; height:400px;"></div>
+<body>
+
+
+  <div id="sales-container" style="width:100%; height:400px;">
+
+    <figure class="highcharts-figure">
+      <div id="container"></div>
+      <p class="highcharts-description">
+        Chart designed to show the difference between 0 and null in a 3D column
+        chart. A null point represents missing data, while 0 is a valid value.
+      </p>
+    </figure>
+  </div>
+
+
+  <div id="fruits-container" style="width:100%; height:400px;"></div>
+  <div id="stocks-container" style="width:100%; height:400px;"></div>
+  <div id="temp-container" style="width:100%; height:400px;"></div>
 
   <%= yield %>
 </body>
