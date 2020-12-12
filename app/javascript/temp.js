@@ -1,21 +1,7 @@
 // import Highcharts from 'highcharts'
 import moment from 'moment'
 
-const dates1 = [
-  Date.parse("2020-01-15"),
-  Date.parse("2020-02-15"),
-  Date.parse("2020-03-15"),
-  Date.parse("2020-04-15"),
-  Date.parse("2020-05-15"),
-  Date.parse("2020-06-15"),
-  Date.parse("2020-07-15"),
-  Date.parse("2020-08-15"),
-  Date.parse("2020-09-15"),
-  Date.parse("2020-10-15"),
-  Date.parse("2020-11-15"),
-  Date.parse("2020-12-15")
-]
-const dates2 = [
+const dates = [
   moment("2020-01-15").format("MMM DD"),
   moment("2020-02-15").format("MMM DD"),
   moment("2020-03-15").format("MMM DD"),
@@ -40,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var xAxis = {
     // categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
     //   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-    categories: dates2
+    categories: dates
   };
   var yAxis = {
     title: {
