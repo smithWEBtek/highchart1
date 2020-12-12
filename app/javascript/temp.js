@@ -1,15 +1,46 @@
 // import Highcharts from 'highcharts'
+import moment from 'moment'
+
+const dates1 = [
+  Date.parse("2020-01-15"),
+  Date.parse("2020-02-15"),
+  Date.parse("2020-03-15"),
+  Date.parse("2020-04-15"),
+  Date.parse("2020-05-15"),
+  Date.parse("2020-06-15"),
+  Date.parse("2020-07-15"),
+  Date.parse("2020-08-15"),
+  Date.parse("2020-09-15"),
+  Date.parse("2020-10-15"),
+  Date.parse("2020-11-15"),
+  Date.parse("2020-12-15")
+]
+const dates2 = [
+  moment("2020-01-15").format("MMM DD"),
+  moment("2020-02-15").format("MMM DD"),
+  moment("2020-03-15").format("MMM DD"),
+  moment("2020-04-15").format("MMM DD"),
+  moment("2020-05-15").format("MMM DD"),
+  moment("2020-06-15").format("MMM DD"),
+  moment("2020-07-15").format("MMM DD"),
+  moment("2020-08-15").format("MMM DD"),
+  moment("2020-09-15").format("MMM DD"),
+  moment("2020-10-15").format("MMM DD"),
+  moment("2020-11-15").format("MMM DD"),
+  moment("2020-12-15").format("MMM DD")
+]
 
 document.addEventListener('DOMContentLoaded', function () {
   var title = {
-    text: 'Monthly Average Temperature'
+    text: '2020 Monthly Average Temperature'
   };
   var subtitle = {
     text: 'Source: WorldClimate.com'
   };
   var xAxis = {
-    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-      'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    // categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    //   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    categories: dates2
   };
   var yAxis = {
     title: {
