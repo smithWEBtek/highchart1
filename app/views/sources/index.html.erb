@@ -1,5 +1,5 @@
 <h1>Sources of news</h1>
 
 <% @sources.each do |source| %>
-<h3><%= source.name %></h3>
+<h3><%= link_to source.name, source.url %></h3>
 <% end %>

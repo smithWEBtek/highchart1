@@ -1,0 +1,70 @@
+News organization,API home page,APIs,Note
+American Broadcasting Company,ABC Resources API,Resources API,"Resources API retrieves content produced by ABC businesses, including national and local news, entertainment videos, and more."
+Associated Press,AP Content API,AP Content API,"AP Content API allows the search and download of AP Images, one of the world's largest collections of historical and contemporary imagery."
+,,AP Breaking News API,AP Breaking News API retrieve a list of available breaking news categories and then requests content for a specific category.
+,,,Headlines and images only. Does not provide full text of articles.
+BBC,BBC Platform API [ Currently available only to BBC employees ],Platform API,"""Platform API power all the BBC's product areas - iPlayer, News, Sport, Weather, Children's Knowledge and Learning - as well as many external and partner products such as Youview.""[1]"
+Bloomberg News,Bloomberg API,Bloomberg API,Bloomberg API provides unrestricted access to raw data for customers for its financial market information.
+CBS Sports,CBS Sports Development Center [No longer available],Fantasy Live Scoring API,Fantasy Scoring API retrieves live scoring data for league.
+,,Rules API,Rules API retrieves rules for a fantasy league.
+,,Player Search API,Player Search API retrieves a list of players.
+,,Player Profile API,Player Profile API retrieves a player's profile.
+,,League Roster API,League Roster API retrieves roster for one team or all teams.
+,,Schedule API,Schedule API retrieves schedule and match information.
+,,Salary and Wild Cards API,Salary and Wild Cards API retrieve wildcard values for a set of players.
+,,Playoff Settings API,Playoff Settings API retrieves playoff settings for a league.
+,,Playoff Bracket API,Playoff Bracket API retrieves a league's playoff bracket.
+Die Zeit,ZEIT ONLINE Content API,Online Content API,Online content API provides access to articles from the ZEIT archive dating back to 1946 and from ZEIT ONLINE.
+Dow Jones and Company,Dow Jones Factiva,Enterprise Integration API,""" Share content via enterprise integration API and embeddable widgets while honoring copyright holders."""
+ESPN,"ESPN API NOTE: No new authorized access granted, as of Jan. 2015 [No longer available]",Athlete API,"Athlete API retrieves rosters of players for various sports, as well as biographical and statistical data for individual athletes."
+,,Audio API,Audio API retrieves ESPN on-demand audio content. This includes ESPN podcasts as well as clips from many live shows on ESPN Radio.
+,,Draft API,Draft API retrieves information about NBA and NFL draft picks.
+,,Headlines API,Headlines API retrieves ESPN's various news stories.
+,,Leaders API,Leaders API retrieves information on leading athletes in specific statistics categories.
+,,Medals API,Medals API provides medal and event result information from the Summer and Winter Olympic Games.
+,,Now API,"Now API provides a stream of the latest content published on ESPN.com, including headline news, stories, columns, blogs, videos, podcasts, game recaps, and more."
+,,Photos API,Photos API allows interaction with ESPN's photo content.
+,,Rankings API,"Rankings API provides rankings of teams and players for various sports, as well as recruiting rankings."
+,,Research Notes API,Research Notes API retrieves information from ESPN's vast knowledgebase of exclusive sports data.
+,,Scores & Schedules API,"Scores & Schedules API provides game/match information, including start times, venue, competitors, score, and stats across every major sport."
+,,Standings API,"Standings API retrieves latest standings for a particular sport by division, conference, or overall."
+,,Teams API,"Teams API provides information on roster, stats, and more, for individual teams."
+,,Video API,"Video API allows interaction with ESPN's video-on-demand content, which includes hundreds of video clips each week."
+Financial Times,FT for Developers,Headline API,Headline API allows developers to integrate relevant FT content into the applications of their choice.
+,,Datamining API,Datamining API allows developers to retrieve and host FT articles on their own servers to fully integrate the content into their own products.
+,,Education API,"Education API bring market context to learning resources, so students have a better understanding of the application of theory."
+,,Access API,Access API displays full text FT articles co-mingled with content from other publishers.
+,,,Requires a subscription to the Financial Times.
+Fourth Estate,Fourth Estate NewsHub,Content API,NewsBrief API provides an up-to-the-minute stream of published items.
+,,Headline API,Agenda API provides up-to-date stream from the news daybooks and agendas.
+,,Newsbrief API,Breaking News API retrieves breaking news content.
+,,News Article API,
+MSNBC,Using the msnbc.com APIs,Documents API,"Documents API represents articles, videos, images, slide shows, and other content available on msnbc.com. Documents API returns Documents related to a list of Entities (keywords), another Document, or a geographic location."
+,,Entities API,Entities API returns Entities associated with Documents and Topics. Entities are statistically-significant keywords associated Documents.
+,,Topics API,"Topics pages are special msnbc.com pages that are created for entities that reach a specific threshold of ""importance"". The Topic API returns Topics pages related to Entities or Documents."
+New York Times,The NYT External Developer APIs,Times Newswire API,Times Newswire API provides an up-to-the-minute stream of published items.
+,,Article Search API,"Article Search API retrieves headlines, abstracts and links to associated multimedia from 1851 to today."
+,,Campaign Finance API,Campaign Finance API retrieves presidential campaign contribution and expenditure data based on United States Federal Election Commission filings.
+,,Community API,Community API retrieves comments by NYTimes.com users.
+,,Congress API,"Congress API retrieves U.S. Congressional vote data, including information about specific House and Senate members."
+,,Event Listings API,Event Listings API retrieves information about handpicked events in New York City and the surrounding area.
+,,Geographic API,Geographic API uses linked data to enhance location concepts used in The New York Times' controlled vocabulary.
+,,Movie Reviews API,"Movie Reviews API retrieves links to reviews and NYT Critics' Picks, and search movie reviews by keyword."
+,,Real Estate API,Real Estate API retrieves aggregate data for real estate listings and sales in New York City.
+,,TimesTags API,"TimesTags API retrieves standardized terms that match search queries, and filters by Times dictionaries."
+,,Top Stories API,Top Stories API provides lists of home page articles and associated images.
+NPR,NPR Tech Center,Story API,Story API provides audio from most NPR programs dating back to 1995.
+,NPR One Developer Center,Station Finder API,"Station Finder API used to identify local NPR member stations that carry NPR programming based on zip code, city/state, unique ID, call letters, longitude/latitude, and a few other parameters."
+,,Transcript API,Transcript API provides access to full transcripts of stories airing on selected NPR programs.
+PBS,Documentation - COVE API,Cove API,"Cove API provides access to full PBS episodes, clips, and promotions."
+Reuters,[1],Robust Foundation API,Global Newswires Services in 16 Languages. Rich with facts and context that speak to readers everywhere.
+The Guardian,Guardian Open Platform,Content API,Content API provides access to all the content the Guardian creates and the collections it has of that content (tags and sections). There are over one and a half million items available published as far back as 1999.
+USA Today,Developer's Network,Articles API,Articles API retrieves USA TODAY stories going back to 2004.
+,,Best-Selling Books API,Best-Selling Books API retrieves weekly list of the nation's top-selling books as compiled by USA TODAY.
+,,Book Reviews API,Book Reviews API retrieves USA TODAY book reviews.
+,,Breaking News API,Breaking News API retrieves breaking news content.
+,,Census API,Census API provides access to United States Census information.
+,,Movie Reviews API,Movie Reviews API retrieves USA TODAY movie review content.
+,,Snapshots API,Snapshots API retrieves easy-to-read statistical graphics that present information on various issues and trends in a visually appealing way.
+,,Music Reviews API,Music Reviews API retrieves USA TODAY music review content.
+,,Sports Salaries API,"Sports Salaries API provides information for the MLB, NFL, NBA and NHL, including player, position and team data and salary."
