@@ -18,10 +18,7 @@ ActiveRecord::Schema.define(version: 2020_12_09_012459) do
   create_table "sources", force: :cascade do |t|
     t.string "name"
     t.string "url"
-    t.string "api_url"
-    t.string "api_key"
-    t.string "api_secret"
-    t.string "api_username"
+    t.string "key"
     t.text "description"
     t.text "notes"
     t.datetime "created_at", precision: 6, null: false
