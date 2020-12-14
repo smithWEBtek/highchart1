@@ -6,7 +6,6 @@ class SourcesController < ApplicationController
   end
 
   def show
-
   end
 
   def new
@@ -18,16 +17,19 @@ class SourcesController < ApplicationController
     if @source.save
       redirect_to source_path(@source)
     else
-      render :edit
+      render :new
     end
   end
 
   def edit
-
   end
 
   def update
-
+    if @source.update(source_params)
+      redirect_to source_path(@source)
+    else
+      render :edit
+    end
   end
 
   def destroy
