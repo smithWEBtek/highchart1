@@ -1,24 +1,23 @@
-// import moment from 'moment'
-
 document.addEventListener('DOMContentLoaded', () => {
-  // addListeners()
   showFruitsChart()
 });
 
-let fruitsChartButton = $('button.fruits')
+// let fruitsChartButton = $('button.fruits')
 
-const addListeners = (event) => {
-  fruitsChartButton.on('click', (event) => {
-    debugger;
-    event.preventDefault()
+// const addListeners = (event) => {
+//   fruitsChartButton.on('click', (event) => {
+//     debugger;
+//     event.preventDefault()
 
-    console.log('event: ', event)
+//     console.log('event: ', event)
 
-    showFruitsChart()
-  })
-}
+//     showFruitsChart()
+//   })
+// }
 
-function showFruitsChart() {
+// function showFruitsChart() {
+
+const showFruitsChart = () => {
   let d1 = new Date("2020-12-03")
   let d2 = new Date("2020-12-07")
   let d3 = new Date("2020-12-11")
