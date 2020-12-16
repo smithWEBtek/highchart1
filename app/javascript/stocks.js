@@ -1,15 +1,38 @@
-// import * as Highcharts from 'highcharts';
-// import Highcharts from 'highcharts';
-
 document.addEventListener('DOMContentLoaded', function () {
+  let data2 = [
+    [2008, 2210],
+    [2009, 2202],
+    [2010, 3564],
+    [2012, 1861],
+    [2013, 508],
+    [2014, 4221],
+    [2015, 4535],
+    [2016, 5542],
+    [2017, 9599],
+    [2018, 5756],
+    [2019, 6412]
+  ]
+
+  let data3 = [
+    [2008, 2210],
+    [2009, 2202],
+    [2010, 3564],
+    [2012, 1861],
+    [2013, 508],
+    [2014, 4221],
+    [2015, 4535],
+    [2016, 5542],
+    [2017, 9599],
+    [2018, 5756],
+    [2019, 6412]
+  ]
+
   let url = 'https://demo-live-data.highcharts.com/aapl-c.json'
   $.ajax({
     url: url,
     method: 'get',
     dataType: 'json'
   }).done(function (data) {
-    // debugger;
-    // Create the chart
     Highcharts.chart('stocks-container', {
       rangeSelector: {
         selected: 1
@@ -19,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       series: [{
         name: 'AAPL',
-        data: data,
+        data: data3,
         tooltip: {
-          valueDecimals: 2
+          // valueDecimals: 4
         }
       }]
     });
