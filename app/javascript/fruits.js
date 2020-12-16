@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 //   fruitsChartButton.on('click', (event) => {
 //     debugger;
 //     event.preventDefault()
-
 //     console.log('event: ', event)
 
 //     showFruitsChart()
