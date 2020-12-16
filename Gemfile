@@ -32,7 +32,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'watir'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'
-
+gem 'dotenv'
 group :development, :test do
   gem 'pry'
 end
