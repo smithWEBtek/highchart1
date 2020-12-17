@@ -1,3 +1,4 @@
+const { data } = require("jquery")
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log("the apiNytimesArticleSearch js file loaded")
@@ -6,13 +7,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const fetchArticles = () => {
-  let url = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=arts&api-key=${apiKey}`
+  let data = {
+    endpoint: 'articlesearch',
+    query: 'news'
+  }
 
   $.ajax({
-    url: url,
+    url: '/nyt_api',
     method: 'get',
+    data: data,
     dataType: 'json'
   }).done(response => {
-    console.log('response: ', response)
+ 
+    const articles = response.table.payload.response.docs.map(a => {
+      return new Article(a)
+    })
+
+    const articleCards = articles.map(a => {
+      return a.articleHtml()
+    })
+    
+    document.querySelector('#nyt-articles').innerHTML = articleCards.join('')
   })
+}
+
+class Article {
+  constructor(obj) {
+    this.headline = obj.headline.main
+  }
+}
+
+Article.prototype.articleHtml = function () {
+  return (`
+    <div class ='article-card'>
+      <h3 class='article-card__headline'>${this.headline}</h3>
+    </div>
+  `)
 }
