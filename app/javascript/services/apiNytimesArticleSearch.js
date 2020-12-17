@@ -2,14 +2,24 @@ const { data } = require("jquery")
 
 document.addEventListener('DOMContentLoaded', () => {
   console.log("the apiNytimesArticleSearch js file loaded")
+  loadButtons()
   fetchArticles()
 })
 
 
+const loadButtons = () => {
+  let nav = document.getElementById('articles-nav')
+
+  nav.innerHTML = "<button class='articles__button'>Food</button>"
+  nav.innerHTML += "<button class='articles__button'>Arts</button>"
+  nav.innerHTML += "<button class='articles__button'>Sports</button>"
+  nav.innerHTML += "<button class='articles__button'>News</button>"
+}
+
 const fetchArticles = () => {
   let data = {
     endpoint: 'articlesearch',
-    query: 'news'
+    query: 'food'
   }
 
   $.ajax({
