@@ -9,20 +9,20 @@ module AppServices
     end
    
     # example to call this from Ruby:
-    # AppServices::NytApiService.new({endpoint: 'articlesearch', query: 'arts'}).call
+        # AppServices::NytApiService.new({endpoint: 'articlesearch', query: 'arts'}).call
    
     # example to call this from Javascript:
-    #   $.ajax({
-    #     url: '/nyt_api',
-    #     method: 'get',
-    #     data: data,
-    #     dataType: 'json'
-    #   }).done(response => {
-    #     console.log('response: ', response)
-    #     debugger;
-    #   })
-    # }
-    
+        #   $.ajax({
+        #     url: '/nyt_api',
+        #     method: 'get',
+        #     data: data,
+        #     dataType: 'json'
+        #   }).done(response => {
+        #     console.log('response: ', response)
+        #     debugger;
+        #   })
+        # }
+        
     def call
       result = HTTParty.get("https://api.nytimes.com/svc/search/v2/#{@endpoint}.json?q=#{@query}&api-key=#{api_key}")
     rescue HTTParty::Error => e
