@@ -1,11 +1,11 @@
 class Scraper
 
-  # def initialize()
-  #   url = "https://en.wikipedia.org/wiki/Douglas_Adams"
-  #   uri = URI.parse(url)
-  #   response = Net::HTTP.get_response(uri)
-  #   puts response.body
-  # end
+  def initialize()
+    url = "https://en.wikipedia.org/wiki/Douglas_Adams"
+    uri = URI.parse(url)
+    response = Net::HTTP.get_response(uri)
+    puts response.body
+  end
 
 
   # def initialize(url = "https://medium.com/rakuten-rapidapi/top-10-best-news-apis-google-news-bloomberg-bing-news-and-more-bbf3e6e46af6")
@@ -29,9 +29,9 @@ class Scraper
   #   end
   # end
 
-  # def self.reset_sources
-  #   Source.destroy_all
-  #   ActiveRecord::Base.connection.reset_pk_sequence!('sources')
-  # end
+  def self.reset_sources
+    Source.destroy_all
+    ActiveRecord::Base.connection.reset_pk_sequence!('sources')
+  end
 
 end
