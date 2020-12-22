@@ -2,20 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   showFruitsChart()
 });
 
-// let fruitsChartButton = $('button.fruits')
-
-// const addListeners = (event) => {
-//   fruitsChartButton.on('click', (event) => {
-//     debugger;
-//     event.preventDefault()
-//     console.log('event: ', event)
-
-//     showFruitsChart()
-//   })
-// }
-
-// function showFruitsChart() {
-
 const showFruitsChart = () => {
   let d1 = new Date("2020-12-03")
   let d2 = new Date("2020-12-07")
