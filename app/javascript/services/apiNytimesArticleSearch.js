@@ -1,19 +1,14 @@
 const { data } = require("jquery")
 
 document.addEventListener('DOMContentLoaded', () => {
-  console.log("the apiNytimesArticleSearch js file loaded")
-  loadButtons()
-  listenerButtons()
-  // fetchArticles() 
-})
+  let location = window.location.href.split('/')[window.location.href.split('/').length - 1]
 
-const listenerButtons = () => {
-  $('button.nyt').on('click', (event) => {
-    event.preventDefault()
-    let query = event.currentTarget.textContent
-    fetchArticles(query)
-  }) 
-}
+  if (location == ""){
+    console.log("the apiNytimesArticleSearch js file loaded")
+    loadButtons()
+    listenerButtons()
+  }
+})
 
 const loadButtons = () => {
   let nav = document.getElementById('articles-nav')
@@ -21,6 +16,14 @@ const loadButtons = () => {
   nav.innerHTML += "<button class='articles__button nyt'>Arts</button>"
   nav.innerHTML += "<button class='articles__button nyt'>Sports</button>"
   nav.innerHTML += "<button class='articles__button nyt'>News</button>"
+}
+
+const listenerButtons = () => {
+  $('button.nyt').on('click', (event) => {
+    event.preventDefault()
+    let query = event.currentTarget.textContent
+    fetchArticles(query)
+  }) 
 }
 
 const fetchArticles = (queryTerm) => {
