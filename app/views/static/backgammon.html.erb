@@ -1,14 +1,16 @@
+<circle radius="15px"></circle>
+<span class="token-black"></span>
+<span class="token-white"></span>
+<span class="token-black"></span>
+<span class="token-white"></span>
+
 <div class="board-nav">
   <button id="setup-board">Setup board</button>
   <div id="tokens"></div>
-  <svg xmlns="http://www.w3.org/2000/svg"
+  <%# <svg xmlns="http://www.w3.org/2000/svg"
      width="600" height="175" viewBox="0 0 1200 350">
     <circle cx="150" cy="125" r="50" fill="blue" opacity="1"/>
-  </svg>
-  <svg xmlns="http://www.w3.org/2000/svg"
-     width="600" height="175" viewBox="0 0 1200 350">
-    <circle cx="150" cy="125" r="50" fill="blue" opacity="1"/>
-  </svg>
+  </svg> %>
 </div>
 <div class="container">
   <svg height="400" width="375" class="item-lower-left">
@@ -28,7 +30,7 @@
     <polygon id="12" points="325,175 300,400 350,400" class="triangle-black" />
   </svg>
   <svg height="300" width="375" class="item-upper-left">
-    <polygon id="13" points="75,240 50,15 100,15" class="triangle-black"  opacity=".5"/>
+    <polygon id="13" points="75,240 50,15 100,15" class="triangle-black" />
     <polygon id="14" points="125,240 100,15 150,15" class="triangle-white" />
     <polygon id="15" points="175,240 150,15 200,15" class="triangle-black" />
     <polygon id="16" points="225,240 200,15 250,15" class="triangle-white" />
@@ -45,5 +47,43 @@
   </svg>
   <svg height="700" width="700">
     <rect x="375" y="46" width="50" height="585" rx="5" class="board-bar" />
+  </svg>
+</div>
+
+<div class="demo">
+  <svg xmlns="http://www.w3.org/2000/svg"
+     width="600" height="175" viewBox="0 0 1000 350">
+    <!-- Background blue rectangle -->
+    <rect x="100" y="100" width="1000" height="150" fill="blue"/>
+    <!-- Red circles going from opaque to nearly transparent -->
+    <circle cx="200" cy="100" r="50" fill="red" opacity="1"/>
+    <circle cx="400" cy="100" r="50" fill="red" opacity=".8"/>
+    <circle cx="600" cy="100" r="50" fill="red" opacity=".6"/>
+
+    <!-- Opaque group, opaque circles -->
+    <g opacity="1">
+      <circle cx="182.5" cy="250" r="50" fill="red" opacity="1"/>
+      <circle cx="217.5" cy="250" r="50" fill="green" opacity="1"/>
+    </g>
+    <!-- Group opacity: .5, opacity circles -->
+    <g opacity=".5">
+      <circle cx="382.5" cy="250" r="50" fill="red" opacity="1"/>
+      <circle cx="417.5" cy="250" r="50" fill="green" opacity="1"/>
+    </g>
+    <!-- Opaque group, semi-transparent green over red -->
+    <g opacity="1">
+      <circle cx="582.5" cy="250" r="50" fill="red" opacity=".5"/>
+      <circle cx="617.5" cy="250" r="50" fill="green" opacity=".5"/>
+    </g>
+    <!-- Opaque group, semi-transparent red over green -->
+    <g opacity="1">
+      <circle cx="817.5" cy="250" r="50" fill="green" opacity=".5"/>
+      <circle cx="782.5" cy="250" r="50" fill="red" opacity=".5"/>
+    </g>
+    <!-- Group opacity .5, semi-transparent green over red -->
+    <g opacity=".5">
+      <circle cx="982.5" cy="250" r="50" fill="red" opacity=".5"/>
+      <circle cx="1017.5" cy="250" r="50" fill="green" opacity=".5"/>
+    </g>
   </svg>
 </div>
