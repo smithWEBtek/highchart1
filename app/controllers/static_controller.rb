@@ -4,7 +4,7 @@ class StaticController < ApplicationController
     render :charts
   end
 
-  def cssgrid
-    render :cssgrid
+  def backgammon
+    render :backgammon
   end
 end

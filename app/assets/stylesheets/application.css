@@ -29,7 +29,7 @@
 }
 
 .board-bar {
-  background-color: rgb(69, 67, 67);
+  fill: rgb(111, 113, 111);
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
