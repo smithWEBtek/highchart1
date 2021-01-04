@@ -8,7 +8,7 @@ tokenTest = () => {
 }
 
 tokenBlack = () => {
-  return (`<svg><circle cx="60" cy="50" r="23" fill="black" class="token-black" opacity="1" /></svg>`)
+  return (`<circle cx="60" cy="50" r="23" fill="black" class="token-black" opacity="1" />`)
 }
 
 const tokenWhite = () => {
@@ -22,9 +22,10 @@ const tokenWhite = () => {
 const setupBoard = () => {
   $("button#setup-board").on("click", () => {
     // $('div#tokens').append(tokenBlack())
-    // $('polygon#13.triange-black').html(tokenBlack())
     // $('svg polygon#13').html(`<span class="token-black"></span>`)
-    $('svg polygon#13').prepend(tokenTest())
+    // $('svg polygon#13').prepend(tokenTest())
+    // $('polygon#13.triange-black').html(tokenBlack())
+    // $('polygon#13.triange-black').append(tokenBlack())
   });
 };
 

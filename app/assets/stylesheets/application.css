@@ -15,50 +15,11 @@
  */
 
 .container {
-  display: grid;
-  grid-template-rows: 2rem 200px 300px 100px 1rem;
-  grid-template-columns: 23rem 2rem 23rem;
-}
-
-.item-lower-left {
-  border-radius: 7px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  border: 1px solid gray;
 }
 
 .board-bar {
   fill: rgb(111, 113, 111);
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 4;
-}
-
-.item-lower-right {
-  border-radius: 7px;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-}
-
-.item-upper-left {
-  border-radius: 7px;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  z-index: 0;
-}
-
-.item-upper-right {
-  border-radius: 7px;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
 }
 
 .triangle-black {
@@ -91,5 +52,9 @@
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: inline-block;
-  z-index: 10;
+}
+
+.lower-left {
+  border: 1px dashed red;
+  height: 600px;
 }
